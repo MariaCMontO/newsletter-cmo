@@ -80,6 +80,12 @@ form {
     margin-block: 2rem;
 }
 
+#div-label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 form label {
     font-weight: 700;
     font-size: 1rem;
@@ -90,7 +96,7 @@ form input {
     border-radius: 1rem;
     padding: 2rem;
     border: 0.05rem solid rgb(194, 193, 193);
-    margin-block-start: 1rem;
+    margin-block-start: 0.7rem;
     margin-block-end: 2.5rem;
     cursor: pointer;
 }
@@ -148,6 +154,19 @@ form button:hover {
 .is-hidden {
     display: none;
 }
+
+.invalid-email {
+    background-color: hsl(4, 100%, 67%, 0.2);
+    border-color: hsl(4, 100%, 67%, 0.5);
+    color: hsl(4, 100%, 67%);
+}
+
+.invalid-message{
+    color: hsl(4, 100%, 67%);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 
 .success-container {
     background-color: var(--White);
